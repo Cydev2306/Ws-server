@@ -4,10 +4,10 @@ var io = require('socket.io')(server);
 var statusRpi= {}
 server.listen(process.env.PORT || 8080);
 
-/*app.get('/', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
-*/
+
 app.get('/monit', function (req, res) {
   res.sendFile(__dirname + '/monit.html');
 });
