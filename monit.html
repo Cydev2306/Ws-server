@@ -1,0 +1,8 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost:8080',{query:'name=monit'});
+  socket.on('connect', function () {})
+  socket.on('status', function (data) {
+    console.log('RPI connected', data);
+  });
+</script>
